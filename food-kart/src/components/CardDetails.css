@@ -1,0 +1,11 @@
+.items_details{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.items_img img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
