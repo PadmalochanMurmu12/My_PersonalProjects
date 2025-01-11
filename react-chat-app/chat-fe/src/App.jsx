@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon } from '@heroicons/react/outline';
 import io from "socket.io-client";
 
-// const socket = io("http://localhost:5000");
-const socket = io(process.env.REACT_APP_BACKEND_URL);
+const socket = io("http://localhost:5000");
+// const socket = io(process.env.REACT_APP_BACKEND_URL);
 
 const App = () => {
   const [username, setUsername] = useState("");
@@ -114,7 +114,7 @@ const App = () => {
           <h1 className="text-2xl font-semibold">Hello There!👋</h1>
           <div className="flex flex-col items-center gap-2">
             <label htmlFor="textbox" className="font-semibold">
-              
+
             </label>
             <input
               type="text"
